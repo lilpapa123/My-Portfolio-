@@ -12,7 +12,6 @@ import {
   tailwind,
   nodejs,
   mongodb,
-  flutter,
   git,
   figma,
   meta,
@@ -107,10 +106,6 @@ const technologies = [
   {
     name: "figma",
     icon: figma,
-  },
-  {
-    name: "FLUTTER",
-    icon: flutter,
   }
 ];
 
