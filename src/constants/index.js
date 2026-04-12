@@ -1,23 +1,19 @@
 import {
   mobile,
-  backend,
-  creator,
-  web,
+   web,
   javascript,
   typescript,
   html,
+  dart,
+  flutter,
+  python,
   css,
   reactjs,
-  redux,
+  NTGClarity,
   tailwind,
-  nodejs,
-  mongodb,
   git,
   figma,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
+  
   carrent,
   jobit,
   tripguide,
@@ -45,20 +41,17 @@ const services = [
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Flutter Developer",
     icon: mobile,
   },
-  {
-    title: "Backend Developer",
-    icon: backend,
-  },
-  {
-    title: "Content Creator",
-    icon: creator,
-  },
+  
 ];
 
 const technologies = [
+   {
+    name: "Python",
+    icon: python,
+  },
   {
     name: "HTML 5",
     icon: html,
@@ -79,21 +72,18 @@ const technologies = [
     name: "React JS",
     icon: reactjs,
   },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
+
   {
     name: "Tailwind CSS",
     icon: tailwind,
   },
   {
-    name: "Node JS",
-    icon: nodejs,
+    name: "Dart",   
+    icon: dart,
   },
   {
-    name: "MongoDB",
-    icon: mongodb,
+    name: "Flutter",
+    icon: flutter,
   },
   {
     name: "Three JS",
@@ -111,57 +101,19 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Software Developer Intern",
+    company_name: "NTG Clarity",
+    icon: NTGClarity,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "April 2026 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Contributed to the development of production-level full-stack applications using JavaScript and PostgreSQL.",
+      "Enhanced application performance by optimizing SQL queries and database operations.",
+      "Designed scalable database schemas and ensured consistency and data integrity.",
+      "Participated in backend system design and collaborated with team members on architecture decisions.",
     ],
   },
-  {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
+  
 ];
 
 const testimonials = [

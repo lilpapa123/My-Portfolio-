@@ -1,15 +1,11 @@
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import { styles } from "../styles";
-// Import the logo directly (replace .svg with .png or .jpg if necessary)
-import logo from "../assets/logo.svg"; 
 import menu from '../assets/menu.svg';
 import close from '../assets/close.svg';
-// Import navLinks from your constants file
 import { navLinks } from '../constants';
 
 const Navbar = () => {
-  // eslint-disable-next-line no-unused-vars
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   return (
@@ -24,10 +20,8 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt="logo"
-            className='w-12 h-12 object-contain' />
           <p className='text-white text-[18px] font-bold cursor-pointer flex'>
-            Khaled Elsaady &nbsp;
+            Khaled &nbsp;
             <span className='sm:block hidden'>| Front-End Developer</span>
           </p> 
 

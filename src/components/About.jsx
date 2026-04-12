@@ -2,13 +2,20 @@
 import React from 'react'
 import { motion } from 'framer-motion';
 import { styles } from "../styles";
-import Tilt from 'react-tilt';
+import Tilt from 'react-parallax-tilt'; // ✅ default export - correct // ✅ correct
 import { fadeIn, textVariant } from '../utils/motion';
 import { services } from '../constants';
+import { SectionWrapper } from '../hoc';
 
 const ServiceCard = ({index,title,icon}) => {
   return (
-   <Tilt options={{ max: 45, scale: 1, speed: 450 }} className='xs:w-[250px] w-full'>
+<Tilt
+  tiltMaxAngleX={45}
+  tiltMaxAngleY={45}
+  scale={1}
+  transitionSpeed={450}
+  className='xs:w-[250px] w-full'
+>
         <motion.div 
         variants={fadeIn("right","spring",0.5*index,0.75)}
         className='w-full green-pink-gradient p-[1px]
@@ -54,4 +61,4 @@ const About = () => {
   )
 }
 
-export default About
+export default SectionWrapper(About, "about");
