@@ -13,11 +13,9 @@ import {
   tailwind,
   git,
   figma,
-  
-  carrent,
-  jobit,
-  tripguide,
+  GoGrabit,
   threejs,
+  Musteng,
 } from "../assets";
 
 export const navLinks = [
@@ -144,68 +142,50 @@ const testimonials = [
 ];
 
 const projects = [
+  
   {
-    name: "Car Rent",
+    name: "GoGrabit",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A Flutter-based shopping app with product browsing, cart functionality, and backend powered by Node.js and Express.",
     tags: [
       {
-        name: "react",
+        name: "Flutter",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "Node.js",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "Express",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: GoGrabit,
+    source_code_link: "https://github.com/lilpapa123/GoGrabit",
   },
+
+
   {
-    name: "Job IT",
+    name: "Mustang Shop",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Developed a responsive Ford Mustang-themed website featuring a product shop, interactive gallery, and dynamic UI using HTML, CSS, and JavaScript",
     tags: [
       {
-        name: "react",
+        name: "HTML",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "JavaScript",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "CSS",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: Musteng,
+    source_code_link: "https://github.com/lilpapa123/Mustang-website-project",
   },
 ];
 

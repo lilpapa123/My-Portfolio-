@@ -24,9 +24,9 @@ import python from "./tech/python.png";
 
 import NTGClarity from "./company/NTG.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import GoGrabit from "./GoGrabit.png";
+import Musteng from "./MustengWeb.png";
+
 
 export {
   logo,
@@ -50,7 +50,6 @@ export {
   typescript,
   threejs,
   NTGClarity,
-  carrent,
-  jobit,
-  tripguide,
+  GoGrabit,
+  Musteng,
 };
