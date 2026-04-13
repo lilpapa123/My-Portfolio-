@@ -1,4 +1,5 @@
 import React, { Suspense, useEffect, useState } from "react";
+import * as THREE from "three";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
@@ -30,31 +31,25 @@ const Computers = ({ isMobile }) => {
 };
 
 const ComputersCanvas = () => {
-  const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState(() => {
+    if (typeof window === "undefined") return false;
+
+    return window.matchMedia("(max-width: 500px)").matches;
+  });
 
   useEffect(() => {
-    // Add a listener for changes to the screen size
     const mediaQuery = window.matchMedia("(max-width: 500px)");
-    // console.log(mediaQuery);
-    // console.log(mediaQuery.matches);
 
-    // Set the initial value of the `isMobile` state variable
-    setIsMobile(mediaQuery.matches);
-
-    // Define a callback function to handle changes to the media query
     const handleMediaQueryChange = (event) => {
       setIsMobile(event.matches);
     };
 
-    // Add the callback function as a listener for changes to the media query
     if (mediaQuery.addEventListener) {
       mediaQuery.addEventListener("change", handleMediaQueryChange);
     } else {
-      // Fallback for older versions of Safari
       mediaQuery.addListener(handleMediaQueryChange);
     }
 
-    // Remove the listener when the component is unmounted
     return () => {
       if (mediaQuery.removeEventListener) {
         mediaQuery.removeEventListener("change", handleMediaQueryChange);
@@ -67,7 +62,7 @@ const ComputersCanvas = () => {
   return (
     <Canvas
       frameloop='demand'
-      shadows
+      shadows={{ type: THREE.PCFShadowMap }}
       dpr={[1, 2]}
       camera={{ position: [20, 3, 5], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}

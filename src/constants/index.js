@@ -42,7 +42,10 @@ const services = [
     title: "Flutter Developer",
     icon: mobile,
   },
-  
+  {
+    title: "Figma Designer",
+    icon: figma,
+  },
 ];
 
 const technologies = [

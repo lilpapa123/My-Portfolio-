@@ -52,7 +52,7 @@ const About = () => {
      i have a strong understanding of HTML, CSS, JavaScript, Dart and React. i am also familiar with other front-end frameworks such as Angular Flutter and Vue.js. i am a quick learner and a team player. i am always looking for new challenges and opportunities to grow my skills.
    </motion.p>
 
-   <div className='mt-20 flex flex-wrap gap-10'>
+   <div className='mt-20 flex flex-wrap justify-center gap-10'>
       {services.map((service,index)=> (
         <ServiceCard key={service.title} index={index} {...service} />
       ))}

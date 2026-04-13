@@ -1,4 +1,5 @@
 import React from 'react'
+import * as THREE from 'three';
 
 import { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
@@ -27,7 +28,7 @@ const Earth = () => {
 const EarthCanvas = () => {
   return (
     <Canvas
-      shadows
+      shadows={{ type: THREE.PCFShadowMap }}
       frameloop='demand'
       gl={{preserveDrawingBuffer: true}}
       camera={{ fov: 45, near: 0.1, far: 200, position: [-4, 3, 6] }}
